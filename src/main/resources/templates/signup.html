@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+</head>
+<body>
+    <p th:text="'E-Mail' + ${userToSignup.user_email}" />
+    <p th:text="'Şifre' + ${userToSignup.password}" />
+</body>
+</html>
