@@ -2,7 +2,7 @@ package ekin.example.officialdoc;
 
 import ekin.example.officialdoc.model.User;
 import ekin.example.officialdoc.model.UserToSignup;
-import ekin.example.officialdoc.service.UserService;
+import ekin.example.officialdoc.service.UserService2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,7 +18,7 @@ public class UserController
 {
 
     @Autowired
-    UserService userService;
+    UserService2 userService;
 
 
     @RequestMapping("/adduser")

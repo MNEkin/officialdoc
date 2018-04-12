@@ -2,8 +2,19 @@ package ekin.example.officialdoc.model;
 
 public class UserToSignup
 {
-    private String user_email;
+    private String userEmail;
     private String password;
+    private String userName;
+
+    public String getUserName()
+    {
+        return userName;
+    }
+
+    public void setUserName(String user_name)
+    {
+        this.userName = user_name;
+    }
 
     public String getPassword()
     {
@@ -15,14 +26,14 @@ public class UserToSignup
         this.password = password;
     }
 
-    public String getUser_email()
+    public String getUserEmail()
     {
 
-        return user_email;
+        return userEmail;
     }
 
-    public void setUser_email(String user_email)
+    public void setUserEmail(String user_email)
     {
-        this.user_email = user_email;
+        this.userEmail = user_email;
     }
 }
