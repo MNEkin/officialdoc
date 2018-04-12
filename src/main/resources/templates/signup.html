@@ -5,7 +5,8 @@
     <title>SignUp</title>
 </head>
 <body>
-    <p th:text="'E-Mail' + ${userToSignup.user_email}" />
+    <p th:text="'E-Mail' + ${userToSignup.userEmail}" />
     <p th:text="'Şifre' + ${userToSignup.password}" />
+    <p th:text="${message.signupMessage}" />
 </body>
 </html>

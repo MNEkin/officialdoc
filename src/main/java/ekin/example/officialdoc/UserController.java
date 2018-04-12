@@ -3,6 +3,7 @@ package ekin.example.officialdoc;
 import ekin.example.officialdoc.model.User;
 import ekin.example.officialdoc.model.UserToSignup;
 import ekin.example.officialdoc.service.UserService2;
+import ekin.example.officialdoc.utils.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -41,13 +42,14 @@ public class UserController
     public String signupForm(Model model)
     {
         model.addAttribute("userToSignup", new UserToSignup());
-        return "index.html";
+        return "index";
 
     }
 
     @PostMapping("/signup")
-    public String signupSubmit(@ModelAttribute UserToSignup userToSignup)
+    public String signupSubmit(@ModelAttribute UserToSignup userToSignup, @ModelAttribute Message message)
     {
+        message.setSignupMessage("oldu");
         return "signup";
     }
 
